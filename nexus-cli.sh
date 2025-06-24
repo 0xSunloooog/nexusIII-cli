@@ -49,4 +49,5 @@ echo "🚀 正在启动 Nexus CLI 并连接到网络..."
 docker run -it --rm \
   -v ~/.nexus:/root/.nexus \
   $IMAGE_NAME \
-  bash -c "source ~/.bashrc && nexus-network start --node-id $NODE_ID"
+  bash -c "/root/.nexus/bin/nexus-network start --node-id $NODE_ID"
+
